@@ -6,8 +6,8 @@ import { documentToHtmlString } from '@contentful/rich-text-html-renderer';
 
 // Initialize the Contentful client
 const client = createClient({
-  space: '3mk76s1x85nr',
-  accessToken: '7kG-zJqwYDjbanh3JOLlz9aK1d7pW8cvfHaf6pcDE6M',
+  space: import.meta.env.VITE_CONTENTFUL_SPACE_ID,
+  accessToken: import.meta.env.VITE_CONTENTFUL_ACCESS_TOKEN,
 });
 
 // Fetch entries and render them to the page
