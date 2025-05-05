@@ -1,0 +1,64 @@
+@use './base' as *;
+
+.about {
+  background-color: $background-color;
+
+  &__text {
+    padding: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+  }
+
+  &__paragraph {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  &__fig {
+    height: 8rem;
+    width: 8rem;
+  }
+
+  // &__separation {
+  //   height: 1px;
+  //   background-color: $color-black;
+  //   width: 70%;
+  //   margin: 0 auto 0 auto;
+  // }
+
+  &__body {
+    display: flex;
+    padding: 6rem;
+    align-items: center;
+    margin-top: -5rem;
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__descript {
+    color: $color-black;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 3rem;
+
+    &:not(:last-child) {
+      margin-bottom: 4rem;
+    }
+  }
+
+  &__fox {
+    max-height: 43rem;
+    max-width: 43rem;
+
+    transition: all 0.8s;
+
+    &:hover {
+      transform: rotateY(180deg);
+    }
+  }
+}

@@ -1,0 +1,28 @@
+/* RESET */
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  color: black;
+  /* font-family: 'Poppins', serif; */
+  font-family: 'Nixie One', system-ui;
+}
+
+// VARIABLES
+$color-white: #fff;
+$color-black: #000;
+$background-color: #efefef;
+$primary-green: #1a4615;
+$shadow: 0 4px 3px rgba($color-black, 0.7);
